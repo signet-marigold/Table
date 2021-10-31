@@ -1,0 +1,16 @@
+Acetic Acid, 4.515
+Acetic Anhydride, 1.25
+Acetone, 9.212
+Butyl Alcohol, 0.505
+Hydrochloric Acid, 6.232
+Hydrofluoric Acid, 1.05
+Hydrogen Peroxide, 23.41
+Iodine, 0.56
+Isopropanol, 52.137
+Methanol, 15.154
+Nitric Acid, 4.985
+Potassium Hydroxide, 7.634
+Potassium Iodide, 1.526
+Sodium Carbonate, 4.187
+Sodium Hydroxide, 2.98
+Sulphuric Acid, 3.20561
