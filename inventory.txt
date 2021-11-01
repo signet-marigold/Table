@@ -14,3 +14,4 @@ Potassium Iodide, 1.526
 Sodium Carbonate, 4.187
 Sodium Hydroxide, 2.98
 Sulphuric Acid, 3.20561
+Water, 1.10001

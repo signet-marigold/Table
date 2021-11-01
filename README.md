@@ -1,6 +1,20 @@
 # Table
 
-**TODO: Add description**
+**Chemical Storeroom Written in Elixir**
+
+Displays chemical inventory with amounts of each
+
+Usage:
+$ [chemical name], amount
+To withdraw that amount and the inventory will update.
+
+Attempt to withdraw more than there is in the inventory,
+and it will return with an error
+
+
+How to run app:
+$ mix withdraw
+
 
 ## Installation
 

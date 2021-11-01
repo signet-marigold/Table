@@ -4,18 +4,26 @@ defmodule Table do
     loop()
   end
 
-  def loop do
-    inventory_data = Table.DataParser.get_data
-
-    IO.puts("Request format: [chemical], [amount]")
-    query = (IO.gets("What would you like to withdraw?\n")) |> String.replace_trailing("\n", "")
-
+  def parse_input(query) do
     query_line = String.split(query, ",")
     |> Enum.map(&String.trim/1)
 
+    # add error checking
     [query_chemical, query_amount] = query_line
 
+    # add error checking
     query_amount = query_amount |> String.to_float
+
+    [query_chemical, query_amount]
+  end
+
+  def loop do
+    IO.puts("Request format: [chemical], [amount]")
+    query = (IO.gets("What would you like to withdraw?\n")) |> String.replace_trailing("\n", "")
+
+    [query_chemical, query_amount] = parse_input(query)
+
+    inventory_data = Table.DataParser.get_data
 
     if !Map.has_key?(inventory_data, query_chemical) do
       IO.puts("[Reqest error]: Chemical not in list\n")
